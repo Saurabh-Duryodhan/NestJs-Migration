@@ -22,7 +22,7 @@ import { UserModule } from './user/user.module';
         database: configService.get<string>('DB_NAME'),
         entities: [__dirname + '/**/*.entity{.ts,.js}'],
         autoLoadEntities: true,
-        logging: true
+        logging: true,
       }),
     }),
     UserModule,
@@ -30,4 +30,4 @@ import { UserModule } from './user/user.module';
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule { }
+export class AppModule {}
